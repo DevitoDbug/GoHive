@@ -14,13 +14,13 @@ func main() {
 	}
 	repeat := true
 	for repeat {
-		fmt.Print("Enter a number: ")
+		fmt.Print("\n\nEnter a number: ")
 		fmt.Scan(&num)
 
 		//Check if it is a prime number
 		rootNum := math.Sqrt(float64(num))
 		for i := 2; i <= int(rootNum); i++ {
-			if num%i == 0 && num != 3 {
+			if num%i == 0 && num != 3 && num > 0 {
 				isPrime = false
 				break
 			}
@@ -28,7 +28,7 @@ func main() {
 
 		fmt.Printf("%v - %s ", num, displayText[isPrime])
 
-		fmt.Print("\n\n To check another number enter 0 else 1:  \n\n")
+		fmt.Print("\n\n To check another number enter 0 else 1:  ")
 		fmt.Scan(&repeat)
 
 	}
