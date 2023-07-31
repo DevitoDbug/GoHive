@@ -28,7 +28,7 @@ func main() {
 
 		fmt.Printf("%v - %s ", num, displayText[isPrime])
 
-		fmt.Print("\n\n To check another number enter 0 else 1:  ")
+		fmt.Print("\n\n To check another number enter 0 else 1:  \n\n")
 		fmt.Scan(&repeat)
 
 	}
