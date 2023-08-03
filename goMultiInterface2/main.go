@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type Expense interface {
-	cost() float64
+	cost() (Amount float64)
 }
 type Printer interface {
 	print()
